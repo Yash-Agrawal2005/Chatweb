@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Chat - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img id="userAvatar" src="/images/default-avatar.png" alt="Avatar" class="avatar">
+                    <div class="user-info">
+                        <h3 id="userName">User Name</h3>
+                        <div class="status-selector">
+                            <select id="statusSelect">
+                                <option value="Available">🟢 Available</option>
+                                <option value="Busy">🔴 Busy</option>
+                                <option value="Away">🟡 Away</option>
+                                <option value="Do Not Disturb">⛔ Do Not Disturb</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="userSearch" placeholder="Search team members..." class="search-input">
+            </div>
+
+            <div class="team-list">
+                <h4>Team Members</h4>
+                <div id="teamMembers" class="members-list">
+                    <!-- Team members will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-content">
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-content">
+                    <h2>Welcome to Internal Chat! 👋</h2>
+                    <p>Select a team member from the sidebar to start chatting</p>
+                </div>
+            </div>
+
+            <div class="chat-container" id="chatContainer" style="display: none;">
+                <!-- Chat Header -->
+                <div class="chat-header">
+                    <div class="chat-user-info">
+                        <img id="chatUserAvatar" src="/images/default-avatar.png" alt="Avatar" class="avatar">
+                        <div>
+                            <h3 id="chatUserName">User Name</h3>
+                            <span id="chatUserStatus" class="user-status">Online</span>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button id="searchToggle" class="icon-btn">🔍</button>
+                        <button id="closeChatBtn" class="icon-btn">✕</button>
+                    </div>
+                </div>
+
+                <!-- Search Bar (hidden by default) -->
+                <div class="message-search" id="messageSearch" style="display: none;">
+                    <input type="text" id="messageSearchInput" placeholder="Search messages...">
+                    <button id="clearSearch" class="clear-btn">Clear</button>
+                </div>
+
+                <!-- Messages Area -->
+                <div class="messages-container" id="messagesContainer">
+                    <!-- Messages will be loaded here -->
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                    <span class="typing-text">User is typing...</span>
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="filePreview" class="file-preview"></div>
+
+<div class="message-input-container">
+  <input type="file" id="fileInput" style="display: none;" accept="image/*,.pdf,.doc,.docx,.txt,.zip,.rar">
+  <button id="attachBtn" class="attach-btn">📎</button>
+  <input type="text" id="messageInput" placeholder="Type a message..." class="message-input">
+  <button id="sendBtn" class="send-btn">Send</button>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Upload Progress -->
+    <div id="uploadProgress" class="upload-progress" style="display: none;">
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <span class="progress-text">Uploading...</span>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

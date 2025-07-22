@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Chat Platform - Connect Your Team</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>💬 Internal Chat</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="/login.html" class="btn-login">Login</a>
+                <a href="/login.html" class="btn-signup">Get Started</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Connect Your Team Like Never Before</h1>
+                <p class="hero-subtitle">
+                    A powerful internal chat and collaboration platform designed to keep your team connected, 
+                    productive, and engaged. Real-time messaging, file sharing, and seamless communication.
+                </p>
+                <div class="hero-buttons">
+                    <a href="/login.html" class="btn-primary">Start Chatting Now</a>
+                    <a href="#features" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Teams Connected</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Messages Daily</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99.9%</h3>
+                        <p>Uptime</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="chat-preview">
+                    <div class="chat-window">
+                        <div class="chat-header">
+                            <div class="chat-user">
+                                <div class="avatar"></div>
+                                <span>Team Chat</span>
+                            </div>
+                            <div class="online-indicator"></div>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="message received">
+                                <div class="message-content">Hey team! Ready for the meeting?</div>
+                            </div>
+                            <div class="message sent">
+                                <div class="message-content">Yes, let's do this! 🚀</div>
+                            </div>
+                            <div class="message received">
+                                <div class="message-content">Perfect! See you all in 5 minutes.</div>
+                            </div>
+                        </div>
+                        <div class="typing-indicator">
+                            <span>Sarah is typing...</span>
+                            <div class="typing-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features for Modern Teams</h2>
+                <p>Everything you need to keep your team connected and productive</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Real-time Messaging</h3>
+                    <p>Instant messaging with typing indicators, read receipts, and message history</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>File Sharing</h3>
+                    <p>Share documents, images, and files seamlessly with your team members</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Team Directory</h3>
+                    <p>See who's online, their roles, departments, and availability status</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Message Search</h3>
+                    <p>Quickly find past conversations and important information</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Smart Notifications</h3>
+                    <p>Stay updated with desktop notifications for new messages</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Access your team chat from any device, anywhere, anytime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Built for Internal Team Communication</h2>
+                    <p>
+                        Our internal chat platform is designed specifically for organizations that need 
+                        secure, reliable, and efficient team communication. With features like real-time 
+                        messaging, file sharing, and team management, we help teams stay connected and productive.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="checkmark">✓</span>
+                            <span>Secure JWT-based authentication</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="checkmark">✓</span>
+                            <span>Real-time communication with Socket.IO</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="checkmark">✓</span>
+                            <span>MongoDB for reliable data storage</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="checkmark">✓</span>
+                            <span>Modern responsive design</span>
+                        </div>
+                    </div>
+                    <a href="/login.html" class="btn-primary">Join Your Team</a>
+                </div>
+                <div class="about-image">
+                    <div class="team-preview">
+                        <div class="team-member">
+                            <div class="member-avatar"></div>
+                            <div class="member-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Project Manager</p>
+                                <span class="status online">Online</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar"></div>
+                            <div class="member-info">
+                                <h4>Mike Chen</h4>
+                                <p>Developer</p>
+                                <span class="status online">Online</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar"></div>
+                            <div class="member-info">
+                                <h4>Emily Davis</h4>
+                                <p>Designer</p>
+                                <span class="status away">Away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Team Communication?</h2>
+                <p>Join thousands of teams already using our platform to stay connected and productive.</p>
+                <div class="cta-buttons">
+                    <a href="/login.html" class="btn-primary">Get Started Free</a>
+                    <a href="#contact" class="btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@internalchat.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🏢</div>
+                        <div>
+                            <h4>Office</h4>
+                            <p>123 Business Ave, Suite 100<br>City, State 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>💬 Internal Chat</h3>
+                    <p>Connecting teams, empowering collaboration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="/login.html">Login</a></li>
+                        <li><a href="/login.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Internal Chat Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

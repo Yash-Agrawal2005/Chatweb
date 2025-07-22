@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Chat - Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="logo">
+                <h1>💬 Internal Chat</h1>
+                <p>Connect with your team</p>
+            </div>
+            
+            <form id="authForm" class="auth-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Full Name" style="display: none;">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group" id="additionalFields" style="display: none;">
+                    <input type="text" id="role" placeholder="Role (e.g., Developer, Manager)">
+                    <input type="text" id="department" placeholder="Department (e.g., Engineering, Marketing)">
+                </div>
+                
+                <button type="submit" class="btn-primary" id="submitBtn">Login</button>
+                
+                <div class="form-footer">
+                    <p id="toggleText">Don't have an account? <a href="#" id="toggleMode">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
